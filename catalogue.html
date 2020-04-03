@@ -17,7 +17,9 @@
         <li><a href="contacts.html" title="Контакты">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="cart">Корзина</li>
+        <li class="cart-link">
+          <a class="cart-link" href="cart.html">Корзина</a>
+        </li>
       </ul>
     </nav>
     <h1>Магазин готовых шаблонов</h1>
@@ -32,15 +34,18 @@
         <legend>Сетка:</legend>
       <ul>
         <li>
-          <input type="radio" name="filter-net" value="adaptive" id="net-adaptive" checked>
+          <input type="radio" name="filter-net" class="visually-hidden" value="adaptive" id="net-adaptive" checked>
+          <span class="radio-indicator"></span>
           <label for="net-adaptive">Адаптивная</label>
         </li>
         <li>
-          <input type="radio" name="filter-net" value="fixed" id="net-fixed">
+          <input type="radio" name="filter-net" class="visually-hidden" value="fixed" id="net-fixed">
+          <span class="radio-indicator"></span>
           <label for="net-fixed">Фиксированная</label>
         </li>
         <li>
-          <input type="radio" name="filter-net" value="stretching" id="net-stretching">
+          <input type="radio" name="filter-net" class="visually-hidden" value="stretching" id="net-stretching">
+          <span class="radio-indicator"></span>
           <label for="net-stretching">Резиновая</label>
         </li>
       </ul>
@@ -49,23 +54,28 @@
       <legend>Особенности:</legend>
     <ul>
       <li>
-        <input type="checkbox" name="slider" id="features-slider" checked>
+        <input type="checkbox" name="slider" class="visually-hidden" id="features-slider" checked>
+        <span class="checkbox-indicator"></span>
         <label for="features-slider">Слайдер</label>
       </li>
       <li>
-        <input type="checkbox" name="block" id="features-block">
+        <input type="checkbox" name="block" class="visually-hidden" id="features-block">
+        <span class="checkbox-indicator"></span>
         <label for="features-block">Блок преимуществ</label>
       </li>
       <li>
-        <input type="checkbox" name="news" id="features-news" checked>
+        <input type="checkbox" name="news" class="visually-hidden" id="features-news" checked>
+        <span class="checkbox-indicator"></span>
         <label for="features-news">Новости</label>
       </li>
       <li>
-        <input type="checkbox" name="gallery" id="features-gallery">
+        <input type="checkbox" name="gallery" class="visually-hidden" id="features-gallery">
+        <span class="checkbox-indicator"></span>
         <label for="features-gallery">Галерея</label>
       </li>
       <li>
-        <input type="checkbox" name="cart" id="features-cart">
+        <input type="checkbox" name="cart" class="visually-hidden" id="features-cart">
+        <span class="checkbox-indicator"></span>
         <label for="features-cart">Корзина</label>
       </li>
     </ul>
