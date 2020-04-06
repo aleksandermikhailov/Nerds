@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -27,13 +29,13 @@
       <h2 class="visually-hidden">Описание студии</h2>
       <ul class="slide-switch">
         <li class="slide-radio">
-          <button class="slide-btn" type="button">Первый слайд</button>
+          <button class="btn slide-btn" type="button">Первый слайд</button>
         </li>
         <li class="slide-radio">
-          <button class="slide-btn" type="button">Второй слайд</button>
+          <button class="btn slide-btn" type="button">Второй слайд</button>
         </li>
         <li class="slide-radio">
-          <button class="slide-btn" type="button">Третий слайд</button>
+          <button class="btn slide-btn" type="button">Третий слайд</button>
         </li>
       </ul>
     </div>
@@ -64,20 +66,22 @@
       </ul>
     </section>
     <section class="services">
-      <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покаладая рук, как роботы</p>
-      <div class="whatwecando">
-      <b>Выполняем заказы на разработку:</b>
-      <ul class="services-list">
-        <li class="services-item">Веб-сайтов любой сложности</li>
-        <li class="services-item">Мобильных прилодений для iOS и Android</li>
-        <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
+      <div class="services-container">
+        <b class="services-whoweare">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <p class="services-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покаладая рук, как роботы</p>
+        <div class="whatwecando">
+        <b class="services-ourjob">Выполняем заказы на разработку:</b>
+        <ul class="services-list">
+          <li class="services-item">Веб-сайтов любой сложности</li>
+          <li class="services-item">Мобильных прилодений для iOS и Android</li>
+          <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        </div>
       </div>
     </section>
     <section class="features">
-      <img src="img/nerds-illustration.png" width="360" height="208" alt="Праздничный логотип"
-      <b>С 2004 года любим точность во всем:</b>
+      <img src="img/nerds-illustration.png" width="360" height="208" alt="Праздничный логотип">
+      <b class="features-motto">С 2004 года любим точность во всем:</b>
       <table class="features-table">
         <tr>
           <td>146<sup>%</sup></td>
@@ -108,19 +112,19 @@
         <div class="address">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8<br>тел. +7 (812) 275-75-75</p>
-        <button class="btn" type="button">Напишите нам</button>
+        <button class="btn write-btn" type="button">Напишите нам</button>
       </div>
       </section>
       <div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-btn-vk" title="vk">Вконтакте</a></li>
           <li><a class="social-btn-fb" title="facebook">Фейсбук</a></li>
           <li><a class="social-btn-ig" title="instagram">Инстаграм</a></li>
         </ul>
       </div>
 
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <b class="befriends">Давайте дружить, это выгодно!</b>
+      <p class="socialsale">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
     <section class="modal modal-contactus">
       <h2>Напишите нам</h2>
@@ -133,7 +137,7 @@
         <textarea class="form-letter" id="user-letter" rows="20" cols="100" placeholder="В свободной форме"></textarea>
         <input type="submit" class="btn form-btn" value="Отправить">
       </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="btn modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
