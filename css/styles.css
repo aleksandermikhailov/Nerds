@@ -79,6 +79,16 @@ a {
   color: #a6a6a6;
 }
 
+.slider-bigtext {
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: 500;
+}
+
+.slide-switch-buttons {
+  list-style: none;
+}
+
 .presentation-list {
   list-style: none;
 }
@@ -190,8 +200,4 @@ a {
   line-height: 45px;
   font-weight: 500;
   color: #000000;
-}
-
-.slide-switch {
-  list-style: none;
 }

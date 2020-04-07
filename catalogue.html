@@ -15,7 +15,7 @@
       <ul class="site-navigation">
         <li><a href="studio.html" title="Студия">Студия</a></li>
         <li><a href="clients.html" title="Клиенты">Клиенты</a></li>
-        <li><a href="shop.html" title="Магазин">Магазин</a></li>
+        <li><a class="selected" href="shop.html" title="Магазин">Магазин</a></li>
         <li><a href="contacts.html" title="Контакты">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -30,7 +30,11 @@
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Стоимость:</legend>
-        <input type="range" min="0" max="15000">
+        <input type="range" min="0" max="20000" value="15000">
+        <span class="word-from">От</span>
+        <output class="value-from">0</output>
+        <span class="word-before">До</span>
+        <output class="value-before">15000</output>
       </fieldset>
       <fieldset>
         <legend>Сетка:</legend>
