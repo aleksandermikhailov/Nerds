@@ -98,6 +98,11 @@ a {
   padding-right: 25px;
 }
 
+.site-navigation .selected {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fb565a;
+}
+
 .slider-bigtext {
   color: #000000;
   font-size: 54px;
@@ -252,13 +257,33 @@ a {
   opacity: 0.1;
 }
 
+.map .address {
+  display: block;
+  width: 320px;
+  height: 320px;
+  background-color: #ffffff;
+}
+
 .address .address-header {
   line-height: 30px;
   font-weight: 700;
 }
 
+.address-header {
+  padding-top: 54px;
+  margin-left: 50px;
+}
+
+.address-full {
+  color: #7a7a7a;
+  padding-top: 10px;
+  padding-bottom: 27px;
+  margin-left: 50px;
+}
+
 .write-btn {
   padding: 13px 45px;
+  margin-left: 50px;
 }
 
 .social-list {
