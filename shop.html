@@ -28,18 +28,19 @@
     <h1 class="shop-header">Магазин готовых шаблонов</h1>
   </header>
   <section class="filter-form">
+    <h2 class="visually-hidden">Параметры поиска</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Стоимость:</legend>
+      <fieldset class="filter-cost">
+        <legend class="filter-header">Стоимость:</legend>
         <input type="range" min="0" max="20000" value="15000">
         <span class="word-from">От</span>
         <output class="value-from">0</output>
         <span class="word-before">До</span>
         <output class="value-before">15000</output>
       </fieldset>
-      <fieldset>
-        <legend>Сетка:</legend>
-      <ul>
+      <fieldset class="filter-grid">
+        <legend class="filter-header">Сетка:</legend>
+      <ul class="filter-list">
         <li>
           <input type="radio" name="filter-net" class="visually-hidden" value="adaptive" id="net-adaptive" checked>
           <span class="radio-indicator"></span>
@@ -57,9 +58,9 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset>
-      <legend>Особенности:</legend>
-    <ul>
+    <fieldset class="filer-features">
+      <legend class="filter-header">Особенности:</legend>
+    <ul class="filter-list">
       <li>
         <input type="checkbox" name="slider" class="visually-hidden" id="features-slider" checked>
         <span class="checkbox-indicator"></span>
@@ -87,8 +88,57 @@
       </li>
     </ul>
   </fieldset>
-  <input type="submit" class="btn" value="Показать">
+  <input type="submit" class="btn show-btn" value="Показать">
     </form>
+  </section>
+
+  <section class="sorting">
+    <p class="filter-header">Сортировать:</p>
+    <ul class="sort-btn-list">
+      <li>
+        <button class="btn sort-btn" type="button">По цене</button>
+      </li>
+      <li>
+        <button class="btn sort-btn" type="button">По типу</button>
+      </li>
+      <li>
+        <button class="btn sort-btn" type="button">По названию</button>
+      </li>
+    </ul>
+    <ul class="order-btn-list">
+      <li>
+        <button class="btn order-btn" type="button">По убыванию</button>
+      </li>
+      <li>
+        <butto class="btn order-btn" type="button">По возрастанию</button>
+      </li>
+    </ul>
+  </section>
+
+  <section class="offers">
+    <img class="product-pic product-1" src="img/shop-sedona.jpg">
+    <img class="product-pic product-2" src="img/shop-pink.jpg">
+    <img class="product-pic product-3" src="img/shop-borodinski.jpg">
+    <img class="product-pic product-4" src="img/shop-mishka.jpg">
+    <img class="product-pic product-5" src="img/shop-aplus.jpg">
+    <img class="product-pic product-6" src="img/shop-kvast.jpg">
+  </section>
+
+  <section class="paginator">
+    <ul class="paginator-list">
+      <li>
+        <a class="paginator-link">1</a>
+      </li>
+      <li>
+        <a class="paginator-link">2</a>
+      </li>
+      <li>
+        <a class="paginator-link">3</a>
+      </li>
+      <li>
+        <a class="paginator-link">Следующая</a>
+      </li>
+    </ul>
   </section>
 
   <footer class="page-footer">
@@ -112,3 +162,9 @@
     <b class="befriends">Давайте дружить, это выгодно!</b>
     <p class="socialsale">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+
+<section class="modal modal-card modal-card-pink">
+  <h3 class="modal-header">Pink App</h3>
+  <p class="modal-text">Продуктовый лендинг приложения для iOS и Android</p>
+  <button class="btn modal-btn" type="button">9900 Руб.</button>
+</section>

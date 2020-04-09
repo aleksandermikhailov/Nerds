@@ -404,3 +404,55 @@ a {
 .modal-close-btn img:active {
   opacity: 0.1;
 }
+
+/* shop.html */
+
+.shop-header {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+.filter-header {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+.show-btn {
+  width: 267px;
+  height: 53px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.show-btn:hover,
+.show-btn:focus {
+  background-color: #dfdfdf;
+}
+
+.show-btn:active {
+  color: #959595;
+  background-color: #d5d5d5;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.sort-btn-list {
+  list-style: none;
+}
+
+.order-btn-list {
+  list-style: none;
+}
+
+.paginator-list {
+  list-style: none;
+}
