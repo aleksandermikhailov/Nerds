@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds – Магазин</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
   <header class="main-header">
@@ -13,11 +16,11 @@
       <ul class="site-navigation">
         <li><a href="studio.html" title="Студия">Студия</a></li>
         <li><a href="clients.html" title="Клиенты">Клиенты</a></li>
-        <li><a href="shop.html" title="Магазин">Магазин</a></li>
+        <li><a class="selected" href="shop.html" title="Магазин">Магазин</a></li>
         <li><a href="contacts.html" title="Контакты">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="cart-link">
+        <li class="cart">
           <a class="cart-link" href="cart.html">Корзина</a>
         </li>
       </ul>
@@ -28,7 +31,11 @@
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Стоимость:</legend>
-        <input type="range" min="0" max="15000">
+        <input type="range" min="0" max="20000" value="15000">
+        <span class="word-from">От</span>
+        <output class="value-from">0</output>
+        <span class="word-before">До</span>
+        <output class="value-before">15000</output>
       </fieldset>
       <fieldset>
         <legend>Сетка:</legend>
@@ -84,24 +91,24 @@
     </form>
   </section>
 
-    <footer class="page-footer">
-      <section class="map">
-        <img src="img/map.jpg" alt="Карта с маркером">
-        <h2>Как до нас добраться</h2>
-        <div class="address">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8 <br>тел. +7 (812) 275-75-75</p>
-        <button class="btn">Напишите нам</button>
-      </div>
-      </section>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-btn-vk" title="vk">Вконтакте</a></li>
-          <li><a class="social-btn-fb" title="facebook">Фейсбук</a></li>
-          <li><a class="social-btn-ig" title="instagram">Инстаграм</a></li>
-        </ul>
-      </div>
+  <footer class="page-footer">
+    <section class="map">
+      <img src="img/map.jpg" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="address">
+      <h3 class="address-header">NЁRDS DESIGN STUDIO</h3>
+      <p class="address-full">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8<br>тел. +7 (812) 275-75-75</p>
+      <button class="btn write-btn" type="button">Напишите нам</button>
+    </div>
+    </section>
+    <div class="footer-social">
+      <ul class="social-list">
+        <li><a class="social-btn social-btn-vk" title="vk">Вконтакте</a></li>
+        <li><a class="social-btn social-btn-fb" title="facebook">Фейсбук</a></li>
+        <li><a class="social-btn social-btn-ig" title="instagram">Инстаграм</a></li>
+      </ul>
+    </div>
 
-      <p><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
+    <b class="befriends">Давайте дружить, это выгодно!</b>
+    <p class="socialsale">Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
