@@ -21,7 +21,7 @@
       </ul>
       <ul class="user-navigation">
         <li class="cart">
-          <a class="cart-link" href="cart.html"><img src="img/cart-icon.png" width="15px" heigth="15px">Корзина</a>
+          <a class="cart-link" href="cart.html">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -33,10 +33,10 @@
       <fieldset class="filter-cost">
         <legend class="filter-header">Стоимость:</legend>
         <input type="range" min="0" max="20000" value="15000">
-        <span class="word-from">От</span>
-        <output class="value-from">0</output>
-        <span class="word-before">До</span>
-        <output class="value-before">15000</output>
+        <span class="filter-word word-from">От</span>
+        <output class="filter-value value-from">0</output>
+        <span class="filter-word word-before">До</span>
+        <output class="filter-value value-before">15000</output>
       </fieldset>
       <fieldset class="filter-grid">
         <legend class="filter-header">Сетка:</legend>
@@ -58,11 +58,11 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="filer-features">
+    <fieldset class="filter-features">
       <legend class="filter-header">Особенности:</legend>
     <ul class="filter-list">
       <li>
-        <input type="checkbox" name="slider" class="visually-hidden" id="features-slider" checked>
+        <input type="checkbox" name="slider" class="visually-hidden" id="features-slider">
         <span class="checkbox-indicator"></span>
         <label for="features-slider">Слайдер</label>
       </li>
@@ -72,7 +72,7 @@
         <label for="features-block">Блок преимуществ</label>
       </li>
       <li>
-        <input type="checkbox" name="news" class="visually-hidden" id="features-news" checked>
+        <input type="checkbox" name="news" class="visually-hidden" id="features-news">
         <span class="checkbox-indicator"></span>
         <label for="features-news">Новости</label>
       </li>
@@ -107,21 +107,21 @@
     </ul>
     <ul class="order-btn-list">
       <li>
-        <button class="btn order-btn" type="button">По убыванию</button>
+        <button class="btn order-btn order-btn-dec" type="button">По убыванию</button>
       </li>
       <li>
-        <butto class="btn order-btn" type="button">По возрастанию</button>
+        <butto class="btn order-btn order-btn-inc" type="button">По возрастанию</button>
       </li>
     </ul>
   </section>
 
   <section class="offers">
-    <img class="product-pic product-1" src="img/shop-sedona.jpg">
-    <img class="product-pic product-2" src="img/shop-pink.jpg">
-    <img class="product-pic product-3" src="img/shop-borodinski.jpg">
-    <img class="product-pic product-4" src="img/shop-mishka.jpg">
-    <img class="product-pic product-5" src="img/shop-aplus.jpg">
-    <img class="product-pic product-6" src="img/shop-kvast.jpg">
+    <div class="product-pic product-1">Sedona</div>
+    <div class="product-pic product-2">Pink</div>
+    <div class="product-pic product-3">Borodinski</div>
+    <div class="product-pic product-4">Mishka</div>
+    <div class="product-pic product-5">A-plus</div>
+    <div class="product-pic product-6">Kvast</div>
   </section>
 
   <section class="paginator">
@@ -136,7 +136,7 @@
         <a class="paginator-link">3</a>
       </li>
       <li>
-        <a class="paginator-link">Следующая</a>
+        <a class="paginator-link paginator-link-next">Следующая</a>
       </li>
     </ul>
   </section>
@@ -165,6 +165,6 @@
 
 <section class="modal modal-card modal-card-pink">
   <h3 class="modal-header">Pink App</h3>
-  <p class="modal-text">Продуктовый лендинг приложения для iOS и Android</p>
+  <p class="modal-text">Продуктовый лендинг <br>приложения для iOS и Android</p>
   <button class="btn modal-btn" type="button">9900 Руб.</button>
 </section>
