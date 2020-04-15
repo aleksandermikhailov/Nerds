@@ -548,8 +548,10 @@ a {
 /* shop.html */
 
 .site-navigation .selected {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #fb565a;
+  min-height: 35px;
+  background-image: url("../img/underline-red.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .shop-header {
@@ -558,6 +560,27 @@ a {
   font-weight: 500;
   color: #000000;
   text-align: center;
+  margin-top: 55px;
+  margin-bottom: 110px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.filter-form {
+  width: 30%;
+}
+
+.filter-cost,
+.filter-grid,
+.filter-features {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .filter-header {
@@ -566,6 +589,24 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
+}
+
+.range-scale-container {
+  width: 200px;
+  background-color: #eeeeee;
+}
+
+.range-scale {
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+
+}
+
+.range-values {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .filter-word {
@@ -580,7 +621,6 @@ a {
   text-align: center;
   background-color: #eeeeee;
 }
-
 
 .show-btn {
   width: 267px;
@@ -668,13 +708,48 @@ a {
   background-position: center;
 }
 
+.sorting {
+  display: flex;
+  width: 70%;
+}
+
+.filter-header {
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.filter-cost {
+  display: flex;
+  width: 100%
+}
+
+.filter-word {
+  display: inline-block;
+}
+
+.sortingbtn-container {
+  width: 50%;
+}
+
 .sort-btn-list {
   list-style: none;
+  display: flex;
+  width: 70%;
+  margin-top: -2px;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 .sort-btn {
-  font-size: 14;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
+  margin-left: 25px;
+  padding: 0px;
   color: #b2b2b2;
   background-color: #ffffff;
 }
@@ -692,12 +767,18 @@ a {
 
 .order-btn-list {
   list-style: none;
+  display: flex;
+  width: 30%;
+  margin-top: 0;
+  margin-left: 30px;
+  padding: 0;
 }
 
 .triangle-btn {
   display: inline-block;
   width: 11px;
   height: 11px;
+  margin-left: 20px;
   font-size: 0px;
   line-height: 0px;
   color: transparent;
@@ -728,6 +809,13 @@ a {
   line-height: 0px;
   opacity: 1;
   background-color: #ffffff;
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 66%;
+
 }
 
 .product-pic {
@@ -804,6 +892,7 @@ a {
 
 .paginator-list {
   list-style: none;
+  display: flex;
 }
 
 .paginator-link {
@@ -841,7 +930,7 @@ a {
 
 .modal-card {
   display: block;
-  min-width: 360px;
+  width: 360px;
   min-height: 185px;
   background-color: #eeeeee;
   text-align: center;
