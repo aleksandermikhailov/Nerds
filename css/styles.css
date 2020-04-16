@@ -389,6 +389,10 @@ a {
   margin-top: 80px;
 }
 
+.map img {
+  width: 100%;
+}
+
 .address {
   top: 55px;
   position: absolute;
