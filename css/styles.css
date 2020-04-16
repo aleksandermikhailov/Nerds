@@ -8,7 +8,6 @@ html {
 
 body {
   min-width: 1440px;
-
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -61,7 +60,14 @@ a {
 
 .main-header {
   background-color: #eeeeee;
-  border-bottom: 2px solid #f8f8f8;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-navigation {
@@ -70,11 +76,6 @@ a {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
-}
-
-.main-header-logo {
-  margin-left: 140px;
-  margin-top: 50px;
 }
 
 .main-header-logo img:hover,
@@ -89,23 +90,24 @@ a {
 .site-navigation,
 .user-navigation {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  padding-top: 25px;
 }
 
 .site-navigation {
   display: flex;
   min-width: auto;
   justify-content: space-between;
-  margin-left: 116px;
-  margin-top: 83px;
+  margin-left: 155px;
 }
 
 .user-navigation {
-  margin-top: 83px;
-  margin-left: 200px;
+  margin-left: 245px;
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation a {
   color: #000000;
   padding-left: 46px;
 }
@@ -123,26 +125,32 @@ a {
 }
 
 .cart-link {
-  padding-left: 35px;
+  padding-left: 40px;
+  color: #000000;
   background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .slider {
-  margin-top: 35px;
-  margin-left: 140px;
+  position: relative;
+  margin-top: 20px;
 }
 
-.slide-first {
+.slide {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+}
+
+.slide-second,
+.slide-third {
+  display: none;
 }
 
 .slider-text {
   width: 400px;
-  margin-top: 50px;
-  margin-right: 45px;
+  margin: 0;
+  padding-top: 50px;
 }
 
 .slider-bigtext {
@@ -153,27 +161,38 @@ a {
 }
 
 .slider-smalltext {
+  margin: 0;
   margin-top: 30px;
 }
 
 .slide-red-button {
-  margin-top: -240px;
   padding: 13px 55px;
+  margin-top: 45px;
+}
+
+.slide-image {
+  margin-left: 30px;
+}
+
+.slide-buttons-container {
+  position: absolute;
+  width: 130px;
+  top: 295px;
+  left: 515px;
 }
 
 .slide-switch-buttons {
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 130px;
-  margin-left: 510px;
-  margin-top: -145px;
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .slide-switch-btn {
   color: transparent;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: #ffffff;
 }
@@ -192,17 +211,13 @@ a {
   background-size: auto;
 }
 
-.container {
-  margin-top: 80px;
-}
-
 .presentation-list {
   list-style: none;
   display: flex;
-  width: 1140px;
-  margin-left: 100px;
-  margin-bottom: 80px;
   justify-content: space-between;
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 0;
 }
 
 .presentation-item {
@@ -249,20 +264,19 @@ a {
   color: #eab84d;
 }
 
-.services-features {
+.content-wrapper {
   display: flex;
-  width: 1300px;
+  justify-content: space-between;
+  margin-top: 45px;
   border-top: 2px solid #eeeeee;
 }
 
 .services-container {
-  margin-top: 80px;
-  margin-left: 140px;
-  width: 700px;
+  width: 660px;
+  padding-top: 80px;
 }
 
 .services-description {
-  width: 660px;
   margin-top: 30px;
 }
 
@@ -281,7 +295,6 @@ a {
   background-image: url("../img/red-dash.png");
   background-repeat: no-repeat;
   background-position: left;
-
 }
 
 .services-whoweare {
@@ -299,8 +312,7 @@ a {
 }
 
 .features-container {
-  margin-top: 40px;
-  margin-left: 90px;
+  padding-top: 40px;
 }
 
 .features-motto {
@@ -339,25 +351,21 @@ a {
   color: #283136;
 }
 
-.portfolio {
-  width: 1300px;
-  margin-top: 50px;
+.portfolio-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
-.portfolio-list {
-  list-style: none;
-  display: flex;
-  width: 1140px;
-  margin-left: 20px;
-}
-
 .portfolio-item {
   color: transparent;
-  width: 220px;
-  margin-top: 45px;
-  margin-left: 110px;
+  width: 209px;
+  height: 90px;
 }
 
 .portfolio-item a img {
@@ -373,17 +381,16 @@ a {
 }
 
 .page-footer {
-  margin-top: 80px;
   margin-bottom: 80px;
 }
 
 .map {
   position: relative;
+  margin-top: 80px;
 }
 
 .address {
   top: 55px;
-  left: 140px;
   position: absolute;
   width: 320px;
   min-height: 310px;
@@ -394,7 +401,8 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 35px;
+  padding: 0;
+  margin-top: 55px;
   margin-left: 50px;
 }
 
@@ -402,7 +410,8 @@ a {
   line-height: 18px;
   color: #7a7a7a;
   width: 205px;
-  padding-top: 8px;
+  padding: 0;
+  margin-top: 8px;
   margin-left: 50px;
 }
 
@@ -417,22 +426,24 @@ a {
   margin-left: 50px;
 }
 
-.footer-social-friends {
+.footer-social-friends .container {
   display: flex;
-  margin-top: 50px;
-  margin-left: 100px;
+  justify-content: space-between;
 }
 
 .social-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 260px;
+  padding: 0;
+  margin: 0;
 }
 
 .social-btn {
   display: block;
   width: 80px;
   height: 80px;
-  margin-left: 15px;
   color: transparent;
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -454,24 +465,22 @@ a {
 .social-btn-vk img {
   padding-left: 27px;
   padding-top: 32px;
-
 }
 
 .social-btn-fb img {
   padding-left: 34px;
   padding-top: 27px;
-
 }
 
 .social-btn-ig img {
   padding-left: 30px;
   padding-top: 28px;
-
 }
 
 .footer-texts {
+  flex-grow: 1;
   margin-left: 140px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .page-footer .befriends {
@@ -480,8 +489,9 @@ a {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-
 }
+
+/* Modal windows*/
 
 .modal-contactus h2 {
   font-size: 45px;
