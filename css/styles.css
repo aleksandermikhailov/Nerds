@@ -563,7 +563,7 @@ a {
 /* shop.html */
 
 .site-navigation .selected {
-  min-height: 35px;
+  height: 35px;
   background-image: url("../img/underline-red.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -575,18 +575,18 @@ a {
   font-weight: 500;
   color: #000000;
   text-align: center;
-  margin-top: 55px;
-  margin-bottom: 110px;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 110px;
 }
 
-.main-container {
+.main-container .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 55px 140px;
 }
 
 .filter-form {
-  width: 30%;
+  width: 300px;
 }
 
 .filter-cost,
@@ -610,10 +610,6 @@ a {
 }
 
 .range-scale {
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 20px;
 
 }
 
@@ -723,11 +719,12 @@ a {
 
 .sorting {
   display: flex;
-  width: 70%;
+  flex-wrap: wrap;
+  width: 860px;
 }
 
 .filter-header {
-  width: 50%;
+  width: 240px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -743,14 +740,21 @@ a {
   display: inline-block;
 }
 
+.header-sort {
+  width: 350;
+  padding-left: 100px;
+}
+
 .sortingbtn-container {
-  width: 50%;
+  display: flex;
+  width: auto;
+  margin-left: 235px;
 }
 
 .sort-btn-list {
   list-style: none;
   display: flex;
-  width: 350px;
+  width: 300px;
   margin: 0;
   padding: 0;
 }
@@ -779,8 +783,8 @@ a {
 .order-btn-list {
   list-style: none;
   display: flex;
-  margin-top: 0;
-  margin-left: 30px;
+  margin: 0;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -824,12 +828,13 @@ a {
 .offers {
   display: flex;
   flex-wrap: wrap;
-  width: 66%;
-
+  width: 100%;
+  padding-left: 60px;
 }
 
 .product-pic {
-  display: inline-block;
+  margin-top: 35px;
+  margin-left: 40px;
   min-width: 360px;
   min-height: 616px;
   font-size: 0px;
