@@ -35,9 +35,11 @@
         <h2 class="visually-hidden">Параметры поиска</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-cost">
-            <legend class="filter-header">Стоимость:</legend>
+            <legend class="filter-header cost-header">Стоимость:</legend>
             <div class="range-scale-container">
-              <input type="range" min="0" max="20000" value="15000" class="range-scale">
+              <p class="range-scale">
+                <span class="range-stripe"></span>
+              </p>
             </div>
             <div class="range-values">
               <span class="filter-word word-from">От
@@ -49,52 +51,68 @@
             </div>
           </fieldset>
           <fieldset class="filter-grid">
-            <legend class="filter-header">Сетка:</legend>
+            <legend class="filter-header grid-header">Сетка:</legend>
           <ul class="filter-list">
-            <li>
-              <input type="radio" name="filter-net" class="visually-hidden" value="adaptive" id="net-adaptive" checked>
-              <span class="radio-indicator"></span>
-              <label for="net-adaptive">Адаптивная</label>
+            <li class="filter-item">
+              <label class="filter-radiobtn" for="net-adaptive">
+                <input type="radio" name="filter-net" class="visually-hidden" value="adaptive" id="net-adaptive" checked>
+                <span class="radio-indicator"></span>
+                Адаптивная
+              </label>
             </li>
-            <li>
-              <input type="radio" name="filter-net" class="visually-hidden" value="fixed" id="net-fixed">
-              <span class="radio-indicator"></span>
-              <label for="net-fixed">Фиксированная</label>
+            <li class="filter-item">
+              <label class="filter-radiobtn" for="net-fixed">
+                <input type="radio" name="filter-net" class="visually-hidden" value="fixed" id="net-fixed">
+                <span class="radio-indicator"></span>
+                Фиксированная
+              </label>
             </li>
-            <li>
-              <input type="radio" name="filter-net" class="visually-hidden" value="stretching" id="net-stretching">
-              <span class="radio-indicator"></span>
-              <label for="net-stretching">Резиновая</label>
+            <li class="filter-item">              
+              <label class="filter-radiobtn" for="net-stretching">
+                <input type="radio" name="filter-net" class="visually-hidden" value="stretching" id="net-stretching">
+                <span class="radio-indicator"></span>
+                Резиновая
+              </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter-features">
-          <legend class="filter-header">Особенности:</legend>
+          <legend class="filter-header features-header">Особенности:</legend>
         <ul class="filter-list">
-          <li>
-            <input type="checkbox" name="slider" class="visually-hidden" id="features-slider">
-            <span class="checkbox-indicator"></span>
-            <label for="features-slider">Слайдер</label>
+          <li class="filter-item">
+            <label class="filter-checkbox" for="features-slider">
+              <input type="checkbox" name="slider" class="visually-hidden" id="features-slider">
+              <span class="checkbox-indicator"></span>
+              Слайдер
+            </label>
           </li>
-          <li>
-            <input type="checkbox" name="block" class="visually-hidden" id="features-block">
-            <span class="checkbox-indicator"></span>
-            <label for="features-block">Блок преимуществ</label>
+          <li class="filter-item">
+            <label class="filter-checkbox" for="features-block">
+              <input type="checkbox" name="block" class="visually-hidden" id="features-block">
+              <span class="checkbox-indicator"></span>
+              Блок преимуществ
+            </label>
           </li>
-          <li>
-            <input type="checkbox" name="news" class="visually-hidden" id="features-news">
-            <span class="checkbox-indicator"></span>
-            <label for="features-news">Новости</label>
+          <li class="filter-item">
+            <label class="filter-checkbox" for="features-news">
+              <input type="checkbox" name="news" class="visually-hidden" id="features-news">
+              <span class="checkbox-indicator"></span>
+              Новости
+            </label>
           </li>
-          <li>
-            <input type="checkbox" name="gallery" class="visually-hidden" id="features-gallery">
-            <span class="checkbox-indicator"></span>
-            <label for="features-gallery">Галерея</label>
+          <li class="filter-item">
+            <label class="filter-checkbox" for="features-gallery">
+              <input type="checkbox" name="gallery" class="visually-hidden" id="features-gallery">
+              <span class="checkbox-indicator"></span>
+              Галерея
+            </label>
           </li>
-          <li>
-            <input type="checkbox" name="cart" class="visually-hidden" id="features-cart">
-            <span class="checkbox-indicator"></span>
-            <label for="features-cart">Корзина</label>
+          <li class="filter-item">
+            <label class="filter-checkbox" for="features-cart">
+              <input type="checkbox" name="cart" class="visually-hidden" id="features-cart">
+              <span class="checkbox-indicator"></span>
+              Корзина
+              </label>
           </li>
         </ul>
       </fieldset>
@@ -132,22 +150,21 @@
           <div class="product-pic product-5">A-plus</div>
           <div class="product-pic product-6">Kvast</div>
         </div>
-        <div class="paginator">
-          <ul class="paginator-list">
-            <li>
-              <a class="paginator-link">1</a>
-            </li>
-            <li>
-              <a class="paginator-link">2</a>
-            </li>
-            <li>
-              <a class="paginator-link">3</a>
-            </li>
-            <li>
-              <a class="paginator-link paginator-link-next">Следующая</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="paginator-list">
+          <li class="paginator-item">
+            <a class="paginator-link">1</a>
+          </li>
+          <li class="paginator-item">
+            <a class="paginator-link">2</a>
+          </li>
+          <li class="paginator-item">
+            <a class="paginator-link">3</a>
+          </li>
+          <li class="paginator-item">
+            <a class="paginator-link paginator-link-next">Следующая</a>
+          </li>
+        </ul>
+
       </div>
       </section>
   </main>

@@ -679,35 +679,81 @@ img {
 
 .filter-form {
   width: 300px;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
 }
 
 .filter-cost,
 .filter-grid,
 .filter-features {
-  padding-left: 0;
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 .filter-header {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
 }
 
+.cost-header {
+  padding-bottom: 55px;
+}
+
 .range-scale-container {
-  width: 200px;
-  background-color: #eeeeee;
+  width: 260px;
 }
 
 .range-scale {
+  width: 100%;
+  padding: 40px 20px;
+  margin: 0;
+  margin-bottom: 15px;
+  background-color: #eeeeee;
+  border-radius: 4px;
+}
 
+.range-stripe {
+  display: block;
+  position: relative;
+  height: 2px;
+  padding: 0;
+  background-color: #00ca74;
+}
+
+.range-stripe::before {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/scale-button.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.range-stripe::after {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/scale-button.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .range-values {
-  margin-top: 10px;
-  margin-left: 10px;
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .filter-word {
@@ -716,19 +762,103 @@ img {
 
 .filter-value {
   display: inline-block;
-  min-width: 80px;
-  min-height: 30px;
+  width: 80px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
   text-align: center;
+  vertical-align: middle;
   background-color: #eeeeee;
+  border-radius: 4px;
+  line-height: 16px;
+}
+
+.grid-header,
+.features-header {
+  padding-bottom: 20px;
+}
+
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 45px;
+  color: #283136;
+}
+
+.filter-item {
+  margin-bottom: 15px;
+}
+
+.filter-item:last-child {
+  margin: 0;
+}
+
+.filter-radiobtn,
+.filter-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.filter-radiobtn input[type="radio"] + .radio-indicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+}
+
+.filter-radiobtn input[type="radio"]:hover + .radio-indicator {
+  color: #000000;
+  border-color: #000000;
+}
+
+.filter-radiobtn input[type="radio"]:checked + .radio-indicator::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 4px;
+  bottom: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+}
+
+.filter-radiobtn input[type="radio"]:hover + .radio-indicator::before {
+  background-color: #000000;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/shop-checkbox-off.png");
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.filter-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+  opacity: 1;
+  color: #000000;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url("../img/shop-checkbox-on.png");
+  background-repeat: no-repeat;
 }
 
 .show-btn {
-  width: 267px;
-  height: 53px;
+  width: 260px;
+  height: 50px;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
+  padding: 0;
 }
 
 .show-btn:hover,
@@ -741,84 +871,18 @@ img {
   background-color: #d5d5d5;
 }
 
-.filter-list {
-  list-style: none;
-  color: #283136;
-}
-
-.radio-indicator {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/shop-radiobtn-off.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.4;
-}
-
-.radio-indicator:hover {
-  opacity: 1;
-}
-
-.radio-indicator:hover + label {
-  color: #000000;
-}
-
-.radio-indicator:active,
-.radio-indicator:focus {
-
-  background-image: url("../img/shop-radiobtn-on.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.filter-cost {
-  border: none;
-}
-
-.filter-grid {
-  border: none;
-}
-
-.filter-features {
-  border: none;
-}
-
-.checkbox-indicator {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/shop-checkbox-off.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.4;
-}
-
-.checkbox-indicator:hover {
-  opacity: 1;
-}
-
-.checkbox-indicator:hover + label {
-  color: #000000;
-}
-
-.checkbox-indicator:active,
-.checkbox-indicator:focus {
-  background-image: url("../img/shop-checkbox-on.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .sorting {
   display: flex;
   flex-wrap: wrap;
   width: 860px;
+  padding-top: 20px;
 }
 
-.filter-header {
+.header-sort {
   width: 240px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 100px;
   font-size: 18px;
   line-height: 18px;
 }
@@ -830,11 +894,6 @@ img {
 
 .filter-word {
   display: inline-block;
-}
-
-.header-sort {
-  width: 350;
-  padding-left: 100px;
 }
 
 .sortingbtn-container {
@@ -922,6 +981,8 @@ img {
   flex-wrap: wrap;
   width: 100%;
   padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 60px;
 }
 
 .product-pic {
@@ -935,6 +996,7 @@ img {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 .product-1 {
@@ -1000,15 +1062,20 @@ img {
 .paginator-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 540px;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
 }
 
 .paginator-link {
   display: block;
   font-weight: 500;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 52px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 50px;
   color: #000000;
   background-color: #eeeeee;
   border-radius: 4px;
@@ -1020,7 +1087,7 @@ img {
 
 .paginator-link:active {
   color: #959595;
-  padding-top: 14px;
+  padding-top: 12px;
   border-top: 2px solid #bfbfbf;
   background-color: #d5d5d5;
 }
@@ -1031,7 +1098,7 @@ img {
 }
 
 .paginator-link-next {
-  width: 262px;
+  width: 260px;
   text-transform: uppercase;
 }
 
