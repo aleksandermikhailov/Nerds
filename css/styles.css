@@ -18,6 +18,10 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -32,10 +36,6 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-a {
-  text-decoration: none;
 }
 
 .btn {
@@ -212,16 +212,14 @@ a {
   background-size: auto;
 }
 
-.presentation {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-
 .presentation-list {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .presentation-item {
@@ -287,13 +285,12 @@ a {
 }
 
 .services-features {
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .services-features .container {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #eeeeee;
 }
 
 .services-container {
@@ -384,11 +381,6 @@ a {
   color: #283136;
 }
 
-.portfolio .container {
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-}
-
 .portfolio-list {
   list-style: none;
   display: flex;
@@ -396,7 +388,10 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  padding-top: 50px;
   padding-bottom: 40px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .portfolio-item {
@@ -627,7 +622,6 @@ a {
 
 .form-btn {
   padding: 13px 84px;
-
 }
 
 .modal-close-btn {
@@ -1060,7 +1054,6 @@ a {
 
 .modal-text {
   color: #666666;
-
   text-align: center;
   white-space: pre-wrap;
 }
