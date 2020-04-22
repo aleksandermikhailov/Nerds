@@ -54,7 +54,7 @@
           </div>
             <ul class="slide-switch-buttons">
               <li class="slide-radio">
-                <button class="btn slide-switch-btn" type="button">Первый слайд</button>
+                <button class="btn slide-switch-btn" type="button" checked>Первый слайд</button>
               </li>
               <li class="slide-radio">
                 <button class="btn slide-switch-btn" type="button">Второй слайд</button>
@@ -165,17 +165,23 @@
     </section>
     </footer>
 
-    <section class="modal modal-contactus" hidden="true">
+    <section class="modal modal-contactus">
       <div class="modal-container">
         <h2>Напишите нам</h2>
         <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="form-label" for="user-fullname">Ваше имя:</label>
-          <input class="form-input" type="text" name="fulname" id="user-fullname" placeholder="Имя Фамилия">
-          <label class="form-label" for="user-email">Ваш e-mail:</label>
-          <input class="form-input" type="email" name="e-mail" id="user-email" placeholder="email@example.com">
-          <label class="form-label" for="user-letter">Текст письма:</label>
-          <textarea class="form-input form-letter" id="user-letter" placeholder="В свободной форме"></textarea>
-          <button type="submit" class="btn form-btn" value="Отправить">
+          <p class="user-form-item">
+            <label class="form-label" for="user-fullname">Ваше имя:</label>
+            <input class="form-input" type="text" name="fulname" id="user-fullname" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="user-form-item">
+            <label class="form-label" for="user-email">Ваш e-mail:</label>
+            <input class="form-input" type="email" name="e-mail" id="user-email" value="" placeholder="email@example.com">
+          </p>
+          <p class="user-form-item user-letter">
+            <label class="form-label" for="user-letter">Текст письма:</label>
+            <textarea class="form-input form-letter" id="user-letter" value="" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit" class="btn form-btn">Отправить</button>
         </form>
       <button class="btn modal-close-btn" type="button"><img src="img/modal-close-cross.png">Закрыть</button>
       </div>
