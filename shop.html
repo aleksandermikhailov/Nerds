@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/events.js" async></script>
   </head>
   <body>
   <header class="main-header">
@@ -15,10 +16,10 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии">
         </a>
         <ul class="site-navigation">
-          <li><a href="#studio" title="Студия">Студия</a></li>
-          <li><a href="#clients" title="Клиенты">Клиенты</a></li>
+          <li><a href="index.html#studio" title="Студия">Студия</a></li>
+          <li><a href="index.html#clients" title="Клиенты">Клиенты</a></li>
           <li class="selected"><a href="shop.html" title="Магазин">Магазин</a></li>
-          <li><a href="#contacts" title="Контакты">Контакты</a></li>
+          <li><a href="index.html#contacts" title="Контакты">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
           <li class="cart">
@@ -37,9 +38,12 @@
           <fieldset class="filter-cost">
             <legend class="filter-header cost-header">Стоимость:</legend>
             <div class="range-scale-container">
-              <p class="range-scale">
-                <span class="range-stripe"></span>
+              <div class="range-scale">
+                <p class="range-stripe">
+                <span class="range-btn range-btn-left"></span>
+                <span class="range-btn range-btn-right"></span>
               </p>
+              </div>
             </div>
             <div class="range-values">
               <span class="filter-word word-from">От
@@ -138,7 +142,7 @@
               <button class="btn triangle-btn triangle-btn-down" type="button">По убыванию</button>
             </li>
             <li>
-              <butto class="btn triangle-btn triangle-btn-up" type="button">По возрастанию</button>
+              <button class="btn triangle-btn triangle-btn-up" type="button">По возрастанию</button>
             </li>
           </ul>
         </div>
@@ -202,3 +206,26 @@
       </div>
   </section>
   </footer>
+  <section class="modal modal-contactus">
+    <div class="modal-container">
+      <h2>Напишите нам</h2>
+      <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="user-form-item">
+          <label class="form-label" for="user-fullname">Ваше имя:</label>
+          <input class="form-input" type="text" name="fullname" id="user-fullname" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="user-form-item">
+          <label class="form-label" for="user-email">Ваш e-mail:</label>
+          <input class="form-input" type="email" name="e-mail" id="user-email" value="" placeholder="email@example.com">
+        </p>
+        <p class="user-form-item user-letter">
+          <label class="form-label" for="user-letter">Текст письма:</label>
+          <textarea class="form-input form-letter" id="user-letter" value="" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit" class="btn form-btn">Отправить</button>
+      </form>
+    <button class="btn modal-close-btn" type="button"><img src="img/modal-close-cross.png">Закрыть</button>
+    </div>
+  </section>
+</body>
+</html>

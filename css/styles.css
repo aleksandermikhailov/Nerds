@@ -577,11 +577,27 @@ img {
 
 /* shop.html */
 
-.site-navigation .selected {
+/*.site-navigation .selected {
   height: 35px;
   background-image: url("../img/underline-red.png");
   background-repeat: no-repeat;
   background-position: left bottom;
+}
+*/
+
+.site-navigation .selected {
+  position: relative;
+}
+
+.site-navigation .selected::after {
+  content: "";
+
+  position: absolute;
+  bottom: -5px;
+  right: 46px;
+  left: 0;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .shop-header {
@@ -648,6 +664,29 @@ img {
   background-color: #00ca74;
 }
 
+.range-btn {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/scale-button.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.range-btn-left {
+  left: 0;
+  bottom: -10px;
+}
+
+.range-btn-right {
+  right: 60px;
+  bottom: -10px;
+}
+
+/*
 .range-stripe::before {
   content: "";
   display: inline-block;
@@ -677,6 +716,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
+*/
 
 .range-values {
   display: flex;
@@ -863,8 +903,10 @@ img {
 .order-btn-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 40px;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 40px;
   padding: 0;
 }
 
@@ -872,22 +914,27 @@ img {
   display: inline-block;
   width: 11px;
   height: 11px;
-  margin-left: 20px;
-  font-size: 0px;
-  line-height: 0px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
   color: transparent;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
   opacity: 0.2;
+  outline: none;
+  border: none;
 }
 
 .triangle-btn-down {
   background-image: url("../img/orderbtn-icon-down.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .triangle-btn-up {
   background-image: url("../img/orderbtn-icon-up.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .triangle-btn:hover {
@@ -895,14 +942,16 @@ img {
   line-height: 0px;
   opacity: 0.5;
   background-color: #ffffff;
+  outline: none;
 }
 
 .triangle-btn:active,
-.triangle:focus {
+.triangle-btn:focus {
   font-size: 0px;
   line-height: 0px;
   opacity: 1;
   background-color: #ffffff;
+  outline: none;
 }
 
 .offers {
@@ -1194,4 +1243,41 @@ img {
 
 .modal-card-pink {
   display: none;
+}
+
+.modal-shop-show {
+  display: block;
+}
+
+.modal-show {
+  display: block;
+  animation-name: appearing;
+  animation-duration: 0.5s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
+/* Animation */
+
+@keyframes appearing {
+  0% {opacity: 0;}
+  10% {opacity: 0.1;}
+  20% {opacity: 0.2;}
+  30% {opacity: 0.3;}
+  40% {opacity: 0.4;}
+  50% {opacity: 0.5;}
+  60% {opacity: 0.6;}
+  70% {opacity: 0.7;}
+  80% {opacity: 0.8;}
+  90% {opacity: 0.9;}
+  100% {opacity: 1;}
+}
+
+@keyframes shake {
+  0%, 100% {transform: translate(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
