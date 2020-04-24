@@ -1235,7 +1235,6 @@ img {
 }
 
 .modal-card {
-
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -1287,8 +1286,8 @@ img {
 
 .modal-show {
   display: block;
-  /*animation-name: appearing;*/
-  animation-duration: 0.5s;
+  /*animation-name: appearing;
+  animation-duration: 0.5s;*/
 }
 
 .modal-error {
