@@ -203,7 +203,6 @@ img {
   left: 0;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 
 .slide-switch-btn {
@@ -221,7 +220,7 @@ img {
 }
 
 .slide-switch-btn:active,
-.slide-switch-btn:checked {
+.checked {
   color: transparent;
   background-image: url("../img/active-sliderbutton.png");
   background-position: center;

@@ -38,6 +38,11 @@ slideButtonOne.addEventListener("click", function(evt) {
   if (slideOne.classList.contains("slide-disappear")) {
     slideOne.classList.remove("slide-disappear");
   }
+  if (!slideButtonOne.classList.contains("checked") || slideButtonTwo.classList.contains("checked") || slideButtonThree.classList.contains("checked")) {
+    slideButtonOne.classList.add("checked");
+    slideButtonTwo.classList.remove("checked");
+    slideButtonThree.classList.remove("checked");
+  }
 })
 
 slideButtonTwo.addEventListener("click", function(evt) {
@@ -48,6 +53,11 @@ slideButtonTwo.addEventListener("click", function(evt) {
   if (slideThree.classList.contains("slide-appear")) {
     slideThree.classList.remove("slide-appear");
   };
+  if (!slideButtonTwo.classList.contains("checked") || slideButtonOne.classList.contains("checked") || slideButtonThree.classList.contains("checked")) {
+    slideButtonOne.classList.remove("checked");
+    slideButtonThree.classList.remove("checked");
+    slideButtonTwo.classList.add("checked");
+  }
   slideTwo.classList.add("slide-appear");
 })
 
@@ -58,6 +68,11 @@ slideButtonThree.addEventListener("click", function(evt) {
   };
   if (slideTwo.classList.contains("slide-appear")) {
     slideTwo.classList.remove("slide-appear");
+  }
+  if (!slideButtonThree.classList.contains("checked") || slideButtonOne.classList.contains("checked") || slideButtonTwo.classList.contains("checked")) {
+    slideButtonOne.classList.remove("checked");
+    slideButtonTwo.classList.remove("checked");
+    slideButtonThree.classList.add("checked");
   }
   slideThree.classList.add("slide-appear");
 })
