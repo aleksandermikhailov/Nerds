@@ -430,7 +430,7 @@ img {
   height: 52px;
   position: absolute;
   right: 0;
-  background-image: url("../img/logo-divider.png");
+  background-color: #eeeeee;
   background-repeat: no-repeat;
 }
 
@@ -711,38 +711,6 @@ img {
   bottom: -10px;
 }
 
-/*
-.range-stripe::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 20px;
-  height: 22px;
-  padding: 0;
-  margin: 0;
-  background-image: url("../img/scale-button.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.range-stripe::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 60px;
-  bottom: -10px;
-  width: 20px;
-  height: 22px;
-  padding: 0;
-  margin: 0;
-  background-image: url("../img/scale-button.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-*/
-
 .range-values {
   display: flex;
   width: 260px;
@@ -883,6 +851,7 @@ img {
 
 .filter-cost {
   display: flex;
+  flex-wrap: wrap;
   width: 100%
 }
 
@@ -999,6 +968,10 @@ img {
   background-size: auto;
   background-repeat: no-repeat;
   border-radius: 4px;
+}
+
+.product-pic:hover .modal-card {
+  display: block;
 }
 
 .product-1 {
@@ -1123,10 +1096,13 @@ img {
 .modal-container {
   position: fixed;
   z-index: 5;
-  left: 240px;
-  bottom: 160px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
   width: 960px;
-  margin: 0 auto;
+  height: 590px;
+  margin: auto;
   padding: 0;
   padding-left: 100px;
   padding-right: 100px;
@@ -1167,6 +1143,7 @@ img {
   width: 360px;
   height: 50px;
   color: #000000;
+  padding-left: 15px;
   border: 2px solid #f2f3f4;
   border-radius: 2px;
   outline: none;
@@ -1239,11 +1216,12 @@ img {
   left: 0;
   bottom: 0px;
   width: 360px;
-  border-radius: 4px;
-  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+  border-top-radius: 4px;
   background-color: #eeeeee;
   text-align: center;
 }
+
+
 
 .modal-header {
   font-size: 18px;
@@ -1278,10 +1256,6 @@ img {
 
 .modal-card-pink {
   display: none;
-}
-
-.modal-shop-show {
-  display: block;
 }
 
 .modal-show {
