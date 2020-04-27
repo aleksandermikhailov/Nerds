@@ -1219,20 +1219,23 @@ img {
   border-top-radius: 4px;
   background-color: #eeeeee;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
-
-
 
 .modal-header {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
   margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  padding-top: 30px;
-  padding-bottom: 15px;
+
 }
 
 .modal-text {
@@ -1247,7 +1250,6 @@ img {
   width: 200px;
   height: 50px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .modal-btn:active {
@@ -1255,7 +1257,7 @@ img {
 }
 
 .modal-card-pink {
-  display: none;
+  display: ;
 }
 
 .modal-show {
